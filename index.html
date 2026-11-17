@@ -38,11 +38,12 @@ button,input{font:inherit}button{color:inherit;cursor:pointer}
 .window-body.no-pad{padding:0}
 .toolbar{display:flex;align-items:center;gap:9px;padding:10px 14px;border-bottom:1px solid var(--line);color:var(--muted);font-size:12px}
 .pill{border:1px solid var(--line);border-radius:999px;padding:5px 10px;background:#ffffff0c;color:var(--muted)}
-.btn{border:1px solid var(--line);background:#ffffff12;border-radius:8px;padding:8px 12px;font-size:12px}.btn:hover{background:#ffffff22}.btn.primary{background:var(--accent);border-color:transparent;color:#111827;font-weight:700}
+.btn{border:1px solid var(--line);background:#ffffff12;border-radius:8px;padding:8px 12px;font-size:12px;text-decoration:none;display:inline-block;color:var(--text);text-align:center}.btn:hover{background:#ffffff22}.btn.primary{background:var(--accent);border-color:transparent;color:#111827;font-weight:700}
 .muted{color:var(--muted)}.small{font-size:12px}.section-title{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin:4px 0 12px}
 .finder{display:grid;grid-template-columns:170px 1fr;height:100%}.sidebar{padding:16px 10px;background:#00000018;border-right:1px solid var(--line)}.side-item{padding:9px 10px;border-radius:8px;font-size:13px;cursor:pointer;color:var(--muted)}.side-item.active,.side-item:hover{background:#ffffff16;color:var(--text)}
 .file-area{padding:18px;overflow:auto}.file-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(105px,1fr));gap:12px}.file-card{border:1px solid transparent;background:transparent;border-radius:10px;padding:12px 7px;min-height:105px;display:flex;align-items:center;justify-content:flex-start;flex-direction:column;gap:7px;text-align:center}.file-card:hover{background:#ffffff10;border-color:var(--line)}.file-card .file-emoji{font-size:32px}.file-card .file-name{font-size:11px;line-height:1.35;max-width:100%;overflow-wrap:anywhere;word-break:break-word;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .profile{display:grid;grid-template-columns:140px 1fr;gap:22px;align-items:start}.avatar{width:118px;height:118px;border-radius:30px;background:linear-gradient(135deg,#9aa8ff,#b58bd4);display:grid;place-items:center;font-size:48px;color:#171827;box-shadow:0 12px 30px #0003}.profile h2{font-size:27px;margin:0 0 5px;letter-spacing:-.8px}.profile p{color:var(--muted);line-height:1.65}.stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.stat{padding:10px 13px;border:1px solid var(--line);border-radius:10px;background:#ffffff08;font-size:12px}
+.social-links-grid{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
 .achievement-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}.achievement{padding:12px;border:1px solid var(--line);border-radius:11px;background:#ffffff08;display:flex;gap:11px;align-items:flex-start;min-height:76px}.achievement.locked{opacity:.66}.achievement .medal{font-size:22px}.achievement strong{font-size:13px;display:block}.achievement p{font-size:11px;color:var(--muted);margin:5px 0 0;line-height:1.4}.achievement .status{font-size:10px;color:#9de4b1;margin-top:5px}
 .toast-stack{position:absolute;z-index:1100;top:50px;right:16px;display:flex;flex-direction:column;gap:9px;pointer-events:none}.toast{width:min(310px,calc(100vw - 32px));padding:12px 14px;border-radius:13px;background:rgba(35,38,52,.88);border:1px solid #ffffff22;box-shadow:0 12px 34px #0005;backdrop-filter:blur(25px);display:flex;gap:11px;align-items:center;animation:toastIn .3s ease,toastOut .5s ease 3.7s forwards}.toast .trophy{font-size:23px}.toast b{display:block;font-size:12px}.toast small{color:var(--muted);font-size:12px}@keyframes toastIn{from{opacity:0;transform:translateX(15px)}to{opacity:1;transform:none}}@keyframes toastOut{to{opacity:0;transform:translateX(15px)}}
 .terminal{background:#10131b;color:#d8e5d5;font:13px/1.6 ui-monospace,SFMono-Regular,monospace;height:100%;padding:16px;display:flex;flex-direction:column}.terminal-output{flex:1;overflow:auto;white-space:pre-wrap}.terminal-line{display:flex;gap:8px}.terminal-line span{color:#8fdaa3}.terminal input{flex:1;background:none;border:0;outline:0;color:#fff;font:inherit;min-width:0}
@@ -83,6 +84,14 @@ body.neon{--accent:#5ef4dc;--panel:rgba(9,19,30,.94);--muted:#91b7c6;--line:rgba
     <button class="desktop-icon" data-open="terminal"><span class="glyph">⌘</span><span>Terminal</span></button>
     <button class="desktop-icon" data-open="mines"><span class="glyph">💣</span><span>Minesweeper</span></button>
     <button class="desktop-icon" data-open="snake"><span class="glyph">🐍</span><span>Snake</span></button>
+    
+    <!-- Clickable Desktop Social Icons -->
+    <a class="desktop-icon" href="https://www.instagram.com/_angad_bisht/" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;"><span class="glyph">📸</span><span>Instagram</span></a>
+    <a class="desktop-icon" href="https://discord.gg/WYkVuZmvhf" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;"><span class="glyph">💬</span><span>Discord</span></a>
+    <a class="desktop-icon" href="https://wa.me/qr/QZ3DOX7JWN36D1" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;"><span class="glyph">🟢</span><span>WhatsApp</span></a>
+    <a class="desktop-icon" href="https://www.linkedin.com/in/angad-singh-11b75b273?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;"><span class="glyph">💼</span><span>LinkedIn</span></a>
+    <a class="desktop-icon" href="https://www.snapchat.com/add/angad_bisht7?share_id=mkjv_PTnxec&locale=en-IN" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;"><span class="glyph">👻</span><span>Snapchat</span></a>
+
     <button class="desktop-icon" data-open="trash"><span class="glyph">🗑️</span><span>Trash</span></button>
   </div>
 
@@ -176,9 +185,9 @@ function createWindow(id){
 }
 function windowContent(id){
  if(id==="finder"||id==="trash")return `<div class="finder"><aside class="sidebar"><div class="section-title">Favourites</div><div class="side-item active" data-folder="Projects">📁 Projects</div><div class="side-item" data-folder="Documents">📄 Documents</div><div class="side-item" data-folder="About">👤 About</div><div class="side-item" data-folder="Trash">🗑️ Trash</div></aside><div class="file-area"><div class="toolbar"><span id="folderTitle">${id==="trash"?"Trash":"Projects"}</span><span class="pill">Portfolio files</span></div><div class="file-grid" id="fileGrid"></div></div></div>`;
- if(id==="about")return `<div class="profile"><div class="avatar">AB</div><div><div class="section-title">The person behind the pixels</div><h2>Angad Bisht</h2><div class="muted">Student · Creator · Builder</div><p>I'm Angad, based in Noida, India. I enjoy exploring technology, building electronics projects, experimenting with creative tools, and learning how software works. I believe in learning by making things, even when the first version is held together by optimism and questionable wiring.</p><div class="stats"><div class="stat">📍 Noida, India</div><div class="stat">💻 BCA Student</div><div class="stat">⚡ Tech & Creativity</div></div><h3>Current interests</h3><p>Web development · Arduino & ESP32 · AI tools · Graphic design · Video editing</p></div></div>`;
+ if(id==="about")return `<div class="profile"><div class="avatar">AB</div><div><div class="section-title">The person behind the pixels</div><h2>Angad Bisht</h2><div class="muted">Student · Creator · Builder</div><p>I'm Angad, based in Noida, India. I enjoy exploring technology, building electronics projects, experimenting with creative tools, and learning how software works. I believe in learning by making things, even when the first version is held together by optimism and questionable wiring.</p><div class="stats"><div class="stat">📍 Noida, India</div><div class="stat">💻 BCA Student</div><div class="stat">⚡ Tech & Creativity</div></div><h3>Connect with me</h3><div class="social-links-grid"><a class="btn" href="https://www.instagram.com/_angad_bisht/" target="_blank" rel="noopener">Instagram</a><a class="btn" href="https://discord.gg/WYkVuZmvhf" target="_blank" rel="noopener">Discord</a><a class="btn" href="https://wa.me/qr/QZ3DOX7JWN36D1" target="_blank" rel="noopener">WhatsApp</a><a class="btn" href="https://www.linkedin.com/in/angad-singh-11b75b273?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="https://www.snapchat.com/add/angad_bisht7?share_id=mkjv_PTnxec&locale=en-IN" target="_blank" rel="noopener">Snapchat</a></div><h3>Current interests</h3><p>Web development · Arduino & ESP32 · AI tools · Graphic design · Video editing</p></div></div>`;
  if(id==="story")return `<div class="section-title">A little more context</div><h2>My Story</h2><p class="muted">Curiosity first. Skills follow.</p><p>I started with an interest in computers and the things people can create with them. Over time, that curiosity turned into small experiments: electronics, microcontrollers, editing, design, and software.</p><p>I'm currently studying computer applications and building my skills through hands-on projects. I like taking an idea, breaking it into smaller problems, and making a working version instead of waiting until I know everything.</p><h3>What I'm working toward</h3><p>Becoming a capable developer and creative technologist, building useful products, and eventually turning ideas into real businesses.</p>`;
- if(id==="email")return `<div class="mail-layout"><aside class="mail-side"><div class="section-title">Mailboxes</div><div class="side-item active">📥 Inbox</div><div class="side-item">⭐ Starred</div><div class="side-item">📤 Sent</div></aside><div class="mail-content"><div class="section-title">Contact</div><h2>Let's connect.</h2><p class="muted">For collaborations, projects, or a good conversation.</p><div class="mail-row"><b>✉️ Email</b><p class="muted">Add your email address here before publishing.</p></div><div class="mail-row"><b>◎ Instagram</b><p><a href="https://www.instagram.com/_angad_bisht/" target="_blank" rel="noopener" style="color:var(--accent)">instagram.com/_angad_bisht</a></p></div><div class="mail-row"><b>⌘ GitHub</b><p class="muted">Add your GitHub profile URL here.</p></div><button class="btn primary" onclick="window.location.href='mailto:hello@example.com'">Compose email</button></div></div>`;
+ if(id==="email")return `<div class="mail-layout"><aside class="mail-side"><div class="section-title">Mailboxes</div><div class="side-item active">📥 Inbox</div><div class="side-item">⭐ Starred</div><div class="side-item">📤 Sent</div></aside><div class="mail-content"><div class="section-title">Contact</div><h2>Let's connect.</h2><p class="muted">For collaborations, projects, or a good conversation.</p><div class="mail-row"><b>✉️ Email</b><p class="muted">Add your email address here before publishing.</p></div><div class="mail-row"><b>◎ Instagram</b><p><a href="https://www.instagram.com/_angad_bisht/" target="_blank" rel="noopener" style="color:var(--accent)">instagram.com/_angad_bisht</a></p></div><div class="mail-row"><b>💬 Discord</b><p><a href="https://discord.gg/WYkVuZmvhf" target="_blank" rel="noopener" style="color:var(--accent)">Join Discord Server</a></p></div><button class="btn primary" onclick="window.location.href='mailto:hello@example.com'">Compose email</button></div></div>`;
  if(id==="cv")return `<div class="toolbar"><span>PDF Preview</span><span class="pill">Angad_CV.pdf</span><button class="btn" onclick="window.print()">Print / Save PDF</button></div><div class="doc-page"><h1>Angad Bisht</h1><p>Noida, India · Aspiring Developer & Creative Technologist</p><h3>Profile</h3><p>Commerce graduate and BCA student interested in software, technology, electronics, graphic design, and video editing. A curious beginner who learns through practical projects.</p><h3>Education</h3><p><b>Bachelor of Computer Applications (BCA)</b><br>Institute of Professional Excellence & Management</p><p><b>Class XII</b> · Commerce · CBSE</p><h3>Skills</h3><ul><li>Basic computer knowledge and problem solving</li><li>Communication and teamwork</li><li>Adobe Premiere Pro and Photoshop</li><li>Arduino / ESP32 fundamentals</li><li>Creative tools and AI-assisted workflows</li></ul><h3>Interests</h3><p>Web development · UI design · Embedded systems · Digital media</p><p style="margin-top:28px;color:#777">Replace this sample CV content with your final details before publishing.</p></div>`;
  if(id==="achievements")return `<div class="toolbar"><span>System achievements</span><span class="pill" id="achievementCount"></span><span style="flex:1"></span><span class="small muted">Progress is saved on this device</span></div><div style="padding:16px"><div class="achievement-list" id="achievementList"></div></div>`;
  if(id==="terminal")return `<div class="terminal"><div class="terminal-output" id="terminalOutput">Portfolio OS Terminal [Version 1.0]<br>Type <b>help</b> to see available commands.<br><br></div><div class="terminal-line"><span>angad@portfolio ~ %</span><input id="terminalInput" autocomplete="off" spellcheck="false" aria-label="Terminal command"></div></div>`;
@@ -225,13 +234,11 @@ function showToast(title,desc){const t=document.createElement("div");t.className
 function updateClock(){const d=new Date();$("#clock").textContent=d.toLocaleTimeString([],{hour:"2-digit",minute:"2-digit"})+"  "+d.toLocaleDateString([],{weekday:"short",month:"short",day:"numeric"})}
 setInterval(updateClock,1000);updateClock();
 
-// Finder starts as a real app window, while the desktop remains visible.
 unlock("firstBoot");openWindow("finder");
 document.addEventListener("keydown",e=>{
  if(e.key==="Escape"){ $("#contextMenu").hidden=true;$("#themeMenu").hidden=true; }
 });
 
-// Terminal commands and achievement hooks.
 document.addEventListener("keydown",e=>{
  if(e.key!=="Enter"||!e.target.matches("#terminalInput"))return;
  const input=e.target,cmd=input.value.trim(),out=$("#terminalOutput");if(!cmd)return;
@@ -256,45 +263,6 @@ document.addEventListener("keydown",e=>{
  }else{const r=document.createElement("div");r.textContent="Command not found: "+cmd+". Type help.";out.append(r)}
  input.value="";out.scrollTop=out.scrollHeight;
 });
-
-// Minesweeper: 8x8 board, 10 mines, first click is safe.
-let mineBoard=[],mineOver=false,mineRevealed=0;
-function setupMines(){
- const win=$("#win-mines");if(!win)return;win.dataset.started="1";
- state.gameRuns.mines++;
- if(state.gameRuns.mines>1)unlock("justOneMore");
- if(state.gameRuns.snake>0)unlock("gamer");
- const grid=$("#mineGrid",win);mineBoard=Array.from({length:64},()=>({mine:false,open:false,flag:false,n:0}));mineOver=false;mineRevealed=0;
- let placed=0;while(placed<10){let i=Math.floor(Math.random()*64);if(!mineBoard[i].mine){mineBoard[i].mine=true;placed++}}
- mineBoard.forEach((c,i)=>{if(c.mine)return;let x=i%8,y=Math.floor(i/8);for(let yy=Math.max(0,y-1);yy<=Math.min(7,y+1);yy++)for(let xx=Math.max(0,x-1);xx<=Math.min(7,x+1);xx++)if(mineBoard[yy*8+xx].mine)c.n++});
- grid.innerHTML=mineBoard.map((c,i)=>`<button class="mine-cell" data-mine="${i}"></button>`).join("");
- $("#mineStatus",win).textContent="Find the safe tiles";
- $$(".mine-cell",win).forEach(b=>{b.onclick=()=>revealMine(+b.dataset.mine);b.oncontextmenu=e=>{e.preventDefault();flagMine(+b.dataset.mine)}});
-}
-function drawMines(){const win=$("#win-mines");if(!win)return;mineBoard.forEach((c,i)=>{const b=$(`[data-mine="${i}"]`,win);if(!b)return;b.className="mine-cell"+(c.open?" revealed":"")+(c.flag?" flagged":"");b.textContent=c.open?(c.mine?"💣":c.n||""):(c.flag?"⚑":"");});}
-function flagMine(i){if(mineOver||mineBoard[i].open)return;mineBoard[i].flag=!mineBoard[i].flag;drawMines()}
-function revealMine(i){
- if(mineOver||mineBoard[i].open||mineBoard[i].flag)return;
- mineBoard[i].open=true;
- if(mineBoard[i].mine){mineOver=true;mineBoard.forEach(c=>{if(c.mine)c.open=true});$("#mineStatus").textContent="Boom. You lost.";unlock("firstMine");}
- else{mineRevealed++;if(mineBoard[i].n===0){const x=i%8,y=Math.floor(i/8);for(let yy=Math.max(0,y-1);yy<=Math.min(7,y+1);yy++)for(let xx=Math.max(0,x-1);xx<=Math.min(7,x+1);xx++){let j=yy*8+xx;if(!mineBoard[j].open&&!mineBoard[j].mine)revealMineSafe(j)}}if(mineRevealed===54){mineOver=true;$("#mineStatus").textContent="Clean board! You won.";unlock("cleanBoard")}}
- drawMines();
-}
-function revealMineSafe(i){mineBoard[i].open=true;mineRevealed++;if(mineBoard[i].n===0){let x=i%8,y=Math.floor(i/8);for(let yy=Math.max(0,y-1);yy<=Math.min(7,y+1);yy++)for(let xx=Math.max(0,x-1);xx<=Math.min(7,x+1);xx++){let j=yy*8+xx;if(!mineBoard[j].open&&!mineBoard[j].mine)revealMineSafe(j)}}}
-document.addEventListener("click",e=>{if(e.target.id==="mineReset")setupMines()});
-
-// Snake mini-game.
-let snakeTimer=null,snake=[],food={x:5,y:5},dir={x:1,y:0},nextDir={x:1,y:0},snakeAlive=false;
-function setupSnake(){const w=$("#win-snake");if(!w)return;w.dataset.started="1";drawSnake()}
-function drawSnake(){const c=$("#snakeCanvas");if(!c)return;const ctx=c.getContext("2d"),cell=16;ctx.fillStyle="#111827";ctx.fillRect(0,0,320,320);ctx.fillStyle="#ff6b7a";ctx.fillRect(food.x*cell,food.y*cell,cell-2,cell-2);snake.forEach((p,i)=>{ctx.fillStyle=i?"#62d6b0":"#b7ffe7";ctx.fillRect(p.x*cell,p.y*cell,cell-2,cell-2)})}
-function startSnake(){clearInterval(snakeTimer);snake=[{x:9,y:10},{x:8,y:10},{x:7,y:10}];food={x:15,y:10};dir={x:1,y:0};nextDir={x:1,y:0};snakeAlive=true;state.gameRuns.snake++;if(state.gameRuns.snake>1)unlock("justOneMore");if(state.gameRuns.mines>0)unlock("gamer");$("#snakeStatus").textContent="Game on";drawSnake();snakeTimer=setInterval(tickSnake,125)}
-function tickSnake(){if(!snakeAlive)return;dir=nextDir;const h={x:snake[0].x+dir.x,y:snake[0].y+dir.y};if(h.x<0||h.y<0||h.x>=20||h.y>=20||snake.some(p=>p.x===h.x&&p.y===h.y)){snakeAlive=false;clearInterval(snakeTimer);$("#snakeStatus").textContent="Game over. Press restart.";return}snake.unshift(h);if(h.x===food.x&&h.y===food.y){food={x:Math.floor(Math.random()*20),y:Math.floor(Math.random()*20)}}else snake.pop();drawSnake()}
-document.addEventListener("keydown",e=>{const map={ArrowUp:{x:0,y:-1},w:{x:0,y:-1},ArrowDown:{x:0,y:1},s:{x:0,y:1},ArrowLeft:{x:-1,y:0},a:{x:-1,y:0},ArrowRight:{x:1,y:0},d:{x:1,y:0}};const d=map[e.key];if(d&&$("#win-snake")&&!$("#win-snake").classList.contains("hidden")&&snakeAlive){e.preventDefault();if(d.x!==-dir.x||d.y!==-dir.y)nextDir=d}});
-document.addEventListener("click",e=>{if(e.target.id==="snakeStart"){startSnake();if(state.gameRuns.mines>0)unlock("gamer")}});
-const originalOpen=openWindow;
-const observer=new MutationObserver(()=>{const count=achievementDefs.filter(a=>unlocked[a[0]]).length;const c=$("#achievementCount");if(c)c.textContent=`${count} / ${achievementDefs.length} unlocked`;});
-observer.observe(document.body,{childList:true,subtree:true});
-renderAchievements();
 })();
 </script>
 </body>
